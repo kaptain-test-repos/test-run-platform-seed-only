@@ -1,0 +1,4 @@
+sourcePath: run-platform-seed-only/clusterrolebinding.yaml
+checksum: sha256:3218aafddb26907d978381ea30d200744c149bb6229bb030b76aec86312a94f1
+reviewer: "Fred Cooke"
+signoffTimestamp: 2026-09-29T09:54:34Z
