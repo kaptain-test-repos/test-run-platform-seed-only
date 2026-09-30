@@ -8,8 +8,8 @@ spec:
     # run-* children get stamped kaptain.org/apply-mode: seed-only by the RP
     # seed partition; the deploy reads one env var baked into the image and
     # pulls them out of the apply tree for special seed handling.
-    - run-env-deployment-keel-all-in-one:[1.0,2.0)
-    - run-env-job-keelson-all-in-one:[1.0,2.0)
+    - run-env-deployment-keel-all-in-one:[1.0.3,2.0)
+    - run-env-job-keelson-all-in-one:[1.0.3,2.0)
   main:
     environment:
       deployMode: deployment
