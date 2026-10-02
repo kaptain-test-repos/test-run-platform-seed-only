@@ -1,4 +1,4 @@
-apiVersion: kaptain.org/1.2
+apiVersion: kaptain.org/1.37
 kind: kubernetes-run-platform-meta-environment
 spec:
   global:
@@ -8,8 +8,8 @@ spec:
     # run-* children get stamped kaptain.org/apply-mode: seed-only by the RP
     # seed partition; the deploy reads one env var baked into the image and
     # pulls them out of the apply tree for special seed handling.
-    - run-env-deployment-keel-all-in-one:[1.0.3,2.0)
-    - run-env-job-keelson-all-in-one:[1.0.3,2.0)
+    - run-env-deployment-keel-all-in-one:[1.0.4,2.0)
+    - run-env-job-keelson-all-in-one:[1.0.4,2.0)
   main:
     environment:
       deployMode: deployment
@@ -17,11 +17,6 @@ spec:
       generateIdealEnvironmentDeployManifests: true
       checksumSecretsTiming: build
       failOnUnreferencedConfigOrSecrets: true
-      environmentDeployBaseImage:
-        registry: ghcr.io
-        namespace: kube-kaptain
-        family: trixie-slim
-        version: 1.0.13.1.34.1
       # Coverage: an RP with NO namespace oversight at all. Proves the
       # namespace keys are genuinely optional and that a run-platform build
       # works without them, which is the shape most RPs will actually have.
